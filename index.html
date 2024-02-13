@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pathfinding Algorithms</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <script type="module" src="./scripts/indexPath.js" defer></script>
+  </head>
+  <body>
+	<nav>
+    <label for="select-algo">
+    Select algorithm
+    <select id="select-algo">
+      <option value="">--Select algorithm--</option>
+      <option value="depth-first">Depth First Search</option>
+      <option value="breadth-first">Breadth First Search</option>
+      <option value="dijkstra">Dijkstra's Algorithm</option>
+    </select>
+  </label>
+  <button class="clear-walls">Remove The Walls</button>
+  <button class="clear-path">Remove The Path</button>
+  <button class="clear">Clear Everything</button>
+  <button class="start">Start Visualisation</button>
+  <button class="pos">Position</button>
+  </nav>
+  <div class="switch-container">
+    <label class="wall-anotation">Walls</label>
+    <label class="switch">
+      <input class="switch-checkbox" type="checkbox">
+      <span class="slider"></span>
+    </label>
+    <label class="weight-anotation">Weight</label>
+</div>
+  <section class="visualizer"></section>
+  <script type="module" src="./scripts/indexPath.js" defer></script>
+  </body>
+</html>
